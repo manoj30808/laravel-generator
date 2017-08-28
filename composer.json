@@ -11,8 +11,10 @@
     "require": {
         "php": ">=5.5.9",
         "laravelcollective/html": "^5.4",
-        "laracasts/generators": "dev-master as 1.1.4",
         "doctrine/dbal": "^2.5"
+    },
+    "require-dev": {
+        "laracasts/generators": "^1.1"
     },
     "autoload": {
         "psr-4": {
