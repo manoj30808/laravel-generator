@@ -1,7 +1,7 @@
 {
-    "name": "msppack/DDSGenerate",
-    "keywords": ["laravel5.4","DDSGenerate","social","facebook","google"],
-    "description": "Package for create easly form with single sintex",
+    "name": "msppack/dds-generate",
+    "keywords": ["laravel5.4","DDSGenerate","generators","easy-generator","curd"],
+    "description": "Package for generator laravel admin panel without single line",
     "authors": [
         {
             "name": "Manoj Sonagra",
