@@ -33,7 +33,8 @@
                                     
                                     @foreach ($module_basic_details['fields'] as $field)
                                         @if (in_array('index', explode(',', $field['visibility'])))
-                                            <td>{{$value->$field['field']}}</td>
+                                            <?php $field_value = $field['field'];?>
+                                            <td>{!!$value->{$field_value}!!}</td>
                                         @endif
                                     @endforeach
 
