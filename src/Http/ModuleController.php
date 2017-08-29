@@ -63,7 +63,8 @@ class ModuleController extends Controller
             $this->ctrl_url = "/admin/module/$slug";
             return view($this->view_path . '.index',$compact)
                     ->with('ctrl_url', $this->ctrl_url)
-                    ->with('module_basic_details', $module_basic_details);
+                    ->with('module_basic_details', $module_basic_details)
+                    ->with(['module_name'=>$module_basic_details['name'],'title'=>'List']);
         }
 
         return view($this->view_path . '.not_found');
@@ -77,7 +78,8 @@ class ModuleController extends Controller
             $this->ctrl_url = "/admin/module/$slug";
             return view($this->view_path . '.create')
                         ->with('ctrl_url', $this->ctrl_url)
-                        ->with('module_basic_details', $module_basic_details);
+                        ->with('module_basic_details', $module_basic_details)
+                        ->with(['module_name'=>$module_basic_details['name'],'title'=>'Create']);
         }
         return view($this->view_path . '.not_found');
     }
@@ -129,7 +131,8 @@ class ModuleController extends Controller
             return view($this->view_path . '.edit')
                         ->with('ctrl_url', $this->ctrl_url)
                         ->with('item', $item)
-                        ->with('module_basic_details', $module_basic_details);
+                        ->with('module_basic_details', $module_basic_details)
+                        ->with(['module_name'=>$module_basic_details['name'],'title'=>'Update']);
         }
         return view($this->view_path . '.not_found');
     }

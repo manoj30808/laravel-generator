@@ -111,7 +111,7 @@
     </tbody>
 </table>
 <script src="{{asset('js/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/addmore.js')}}"></script>
+<script type="text/javascript" src="{{asset('admin/js/addmore.js')}}"></script>
 <script type="text/javascript">
 	var flag=true;
     if($('#template-destination .row1').length!=0){
